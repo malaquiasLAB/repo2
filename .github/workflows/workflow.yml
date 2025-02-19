@@ -1,4 +1,4 @@
-name: Echo Repository Name
+name: workflow.yml
 
 on:
   repository_dispatch:
