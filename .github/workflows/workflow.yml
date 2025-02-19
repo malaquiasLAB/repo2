@@ -1,0 +1,15 @@
+name: Echo Repository Name
+
+on: [push]
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Echo repository name
+      run: |
+           echo "Hello, this is the repository: ${{ github.repository }}"
