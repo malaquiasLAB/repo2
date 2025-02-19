@@ -1,6 +1,8 @@
 name: Echo Repository Name
 
-on: [push]
+on:
+  repository_dispatch:
+    types: [custom_event]
 
 jobs:
   echo:
