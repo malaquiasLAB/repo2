@@ -7,10 +7,15 @@ jobs:
   echo:
     runs-on: ubuntu-latest
 
+    environment: dev
+
+    env:
+      REPOSITORY_NAME: ${{ github.repository }}
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
 
     - name: Echo repository name
       run: |
-           echo "Hello, this is the repository: ${{ github.repository }}"
+         echo "Hello, this is the repository: $REPOSITORY_NAME"
