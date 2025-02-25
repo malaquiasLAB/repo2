@@ -11,11 +11,13 @@ jobs:
 
     env:
       REPOSITORY_NAME: ${{ github.repository }}
+      AUTO_APPROVE: ${{ vars.AUTO_APPROVE }}
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
 
     - name: Echo repository name
+      if: env.AUTO_APPROVE == 'true'
       run: |
          echo "Hello, this is the repository: $REPOSITORY_NAME"
