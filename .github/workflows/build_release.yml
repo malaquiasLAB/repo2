@@ -1,4 +1,4 @@
-name: workflow.yml
+name: build_release.yml
 
 on:
   workflow_dispatch:
