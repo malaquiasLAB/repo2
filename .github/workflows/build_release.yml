@@ -27,4 +27,4 @@ jobs:
       with:
         name: Fortify Artifacts
         path: hello.txt
-        retention-days: 30   
+        retention-days: 30     
