@@ -21,8 +21,7 @@ jobs:
       run: |
          echo "Hello, this is the repository: $REPOSITORY_NAME"
          echo "hello OK" > hello.txt
-         echo "hello OK 2" > hello2.txt
-    
+             
     - name: Save hello artifact
       uses: actions/upload-artifact@v4
       with:
